@@ -8,7 +8,7 @@ class TestLinkedList(unittest.TestCase):
     def test_length(self):
         self.assertEqual(self.lst.length(), 0)
         self.lst.append('a')
-        self.assertEqual(self.lst.length(), 1)
+        self.assertEqual(self.lst.length(), 2)  # ПОМИЛКА: має бути 1, але ставимо 2 для падаючого коміту
 
     def test_append(self):
         self.lst.append('a')
